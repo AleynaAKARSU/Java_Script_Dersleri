@@ -1,0 +1,23 @@
+Değişken Tanımlama Kuralalrı 
+
+
+
+
+1) Her değişkenin kendine has ismi olmalı!!!
+
+
+2) Değişken isimleri ingilizce karakter kullanılır. Türkçe karakterler kullanılmalı
+
+
+3) Özel karakterler kullanılmaz (@, #, > , ! ) 
+
+Bu özel karakterler yerine de alt çzigi ile (_) kullanım yapabiliyoruz. (Örn: isim_1)
+Değişkenin başında $ işareti de kullanılabilemektedir ("$isim", "$soy_isim")
+
+4)Değişken tanımlamada değişkenlerin içerisinde sayılara yer verilebilir . Değişkenler sayıyla başlamamlı (Örn: isim1 =>bu tanımlama doğru 1isim =>yanlış bir kullanım)
+
+
+5)Bazı sabit değişkenler bunlar kullanılamaz değişken ismi olarak. Mesela (x,y,id) Bunların yerine koordinatX,koordinatY,kimlik_bilgisi
+
+
+6)Değişken isimleri büyük küçük harf duyarlılıkları vardır. (Örn: isim, ISIM,ve Isim bu ücüde birbirinden farklı değişkenlerdir.)

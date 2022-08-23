@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script 16 Ağustos</title>
+  <script>
+    function parametresizTopla(){
+        var toplam=10+5
+        document.getElementById("").innerHTML=toplam
+
+    }
+    function parametreliTopla(sayi1,sayi2){
+        var parametreliToplam=sayi1+sayi2
+        document.getElementById("parametreliDemo").innerHTML=parametreliToplam
+
+    }
+    function topla(sayi1,sayi2){
+        return document.getElementById("demo").innerHTML=sayi+sayi2
+
+    }
+  </script>
+</head>
+<body>
+    <div>
+    <h1>Toplam Parametresiz</h1>
+    <p id=""></p>
+    <button onclick="parametresizTopla()">Parametresiz Fonksyion Topla</button>
+</div>
+<div>
+    <h1>Toplam Parametreli</h1>
+    <p id="parametreliDemo"></p>
+    <button onclick="parametreliTopla(5,10)">Parametreli Fonksyion Topla</button>
+</div>
+<div>
+    <h1>Toplam Dönüt Veren</h1>
+    <p id="demo"></p>
+    <button onclick="topla(5,10)">Dönüt Veren Fonksyion Topla</button>
+</div>
+<div>
+<a href="degisken.html" target="_blank">Open new Page</a>
+</div>
+</body>
+</html>

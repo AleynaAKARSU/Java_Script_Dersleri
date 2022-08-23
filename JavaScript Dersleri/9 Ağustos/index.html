@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script </title>
+    <!--<script src="index.js">
+        //alert("Hello World")
+    </script>-->
+
+
+    <!-- 
+
+function textDegistir(){
+    yazılacak kodlar buraya gelir
+}
+textDegistir()
+
+
+function topla(sayi1,sayi2){
+yazılacak kodlar geliyo
+}
+topla(2,4)
+function cıkar(sayi1,sayi2){
+yazılacak kodlar geliyo
+}
+cıkar(2,4) =>-2
+cıkar (4,2)=> 2
+
+Fonksiyonlar çağrılırken parantezle çağrılır !!!!!
+
+PARAMATRE => Fonksiyonun işlemek için alacağı değer/değerler denilebilir.
+   
+function paramtreliFonksiyon(parametre1,parametre2,...){
+    yazzılacak kodlar
+}
+paramtreliFonksiyon(parametre1,parametre2,...)
+
+function donutVeren(){ //paramtreli de parametreside olabilir
+    //yapılacak işlemler
+
+return deger
+}
+-->
+
+    <script>
+    function textDegistir(){
+        document.getElementById("textChange").innerHTML="Ben Java Script öğrenmeye başladım."
+        document.getElementById("textChange").style.color="red"
+    }
+    function changeDocument(message,changeColor,changeFontSize){
+        document.getElementById("changeDocument").innerHTML=message
+        document.getElementById("changeDocument").style.color=changeColor
+        document.getElementById("changeDocument").style.fontSize=changeFontSize
+
+
+    }
+    function cikar(sayi1,sayi2){
+        var sonuc=sayi1-sayi2
+        document.getElementById("sonuc").innerHTML=sayi1 +" - "+sayi2 +" sonucu "+sonuc + " etti."
+
+
+    }
+    function cikarPozitif(sayi1,sayi2){
+        var sonuc=sayi1-sayi2
+        document.getElementById("sonucPozitif").innerHTML=sayi1 +" - "+sayi2 +" sonucu "+sonuc + " etti."
+
+
+    }
+
+    function Topla(sayi1, sayi2) {
+        var toplam=sayi1+sayi2
+        
+    return document.getElementById("deneme").innerHTML=toplam;         // sayi1 ve sayi2 toplamını döndürür
+  }
+
+        </script>
+</head>
+<body>
+    <script>
+        document.write("<h4>Hello World</h4>")
+        document.write("<p>Hello World</p>")
+
+    </script>
+   
+   <h1 id="demo">Hello World!</h1>
+   <button onclick="document.getElementById('demo').innerHTML='Java Script Öğreniyorum'">Text Değiştir</button>
+<button onclick="document.getElementById('demo').style.fontSize='60px'"> Font Size Değitir</button>
+<button onclick="document.getElementById('demo').style.color='red'">Renk Değiştir</button>
+<button onclick="alert('Hello World!')">Uyarı mESAJI vER</button>
+<br/>
+
+<p id="textChange">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptates perferendis fuga temporibus distinctio pariatur suscipit, incidunt voluptatum velit soluta.</p>
+<button onclick="textDegistir()">Style Değiştir</button>
+
+<p id="changeDocument">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, quis!</p>
+<button onclick="changeDocument('Metin değiştirildi','blue','60px')">
+    Metin değiştir
+
+</button>
+<p id="sonuc">Çıkarma İşlemi</p>
+<button onclick="cikar(2,4)">
+Sonuç
+</button>
+
+<p id="sonucPozitif">Çıkarma İşlemi</p>
+<button onclick="cikarPozitif(4,2)">
+Sonuç
+</button>
+<p id="deneme">
+    Toplama İşlemi
+   
+</p>
+<button onclick="Topla(5,20)">Topla</button>
+
+</body>
+</html>

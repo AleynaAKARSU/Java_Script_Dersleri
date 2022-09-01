@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cikar(){
+            var x=5
+            document.getElementById('demo').innerHTML=(x-=2) //x=x-2
+        }
+        function veriTürü(){
+            var x=5
+            var site='5'
+            var kisi={ad:'ali',soyad:'veli',yaş:12}
+
+            document.getElementById('veriTürleri').innerHTML=typeof x //number
+            document.getElementById('veriTürleriString').innerHTML=typeof site //string
+            document.getElementById('objectTür').innerHTML=typeof kisi //object (nesne)
+
+            document.getElementById('birlestir').innerHTML=x+site
+        }
+    </script>
+</head>
+<body>
+  <p id="demo">
+Sonuç
+  </p>
+  <button onclick="cikar()">Çıkar</button>
+
+  <p id="veriTürleri"></p>
+  <p id="veriTürleriString"></p>
+  <p id="objectTür"></p>
+
+  <p id="birlestir"></p>
+
+  <button onclick="veriTürü()">
+    Veri Türü
+  </button>
+  <a href="object.html" target="_blank">Object Türleri</a>
+</body>
+</html>

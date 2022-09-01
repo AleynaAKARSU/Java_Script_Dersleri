@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantıksal</title>
+    <script>
+        var i=2,j="2",m=2,n=3,k=2,l=3
+        var sonuc=(i==j)
+        var sonuc2=(i===j)
+var sonuc3=(i!=j)
+var sonuc4=(i!==j)
+var sonuc5=(m<n)
+var sonuc6=(m>n)
+var sonuc7=(m<i)
+
+var sonuc8=(m<=i)
+
+var sonuc9=(m>i)
+
+var sonuc10=(m>=i)
+
+        console.log("i type:",typeof i)
+        console.log("j type",typeof j)
+        console.log("i==j",sonuc) //true döndü
+        console.log("i===j",sonuc2) //false döndü
+        console.log("i!=j",sonuc3) //false döndü
+        console.log("i!==j",sonuc4) //true döndü
+        console.log("m<n",sonuc5) //true döndü
+        console.log("m>n",sonuc6) //false döndü
+        console.log("m<i",sonuc7) //false döndü
+        console.log("m<=i",sonuc8) //true döndü
+
+        console.log("m>i",sonuc9) //false döndü
+        console.log("m>=i",sonuc10) //true döndü
+
+
+        console.log("------MANTIKSAL KARŞILAŞTIRMA---------")
+        console.log("------MANTIKSAL KARŞILAŞTIRMA-&& (VE)---------")
+
+        console.log(sonuc&&sonuc4) //true döndü
+
+        console.log(sonuc&&sonuc2) // false döndü
+        console.log(sonuc6&&sonuc8) // false döndü
+        console.log(sonuc7&&sonuc9) // false
+
+        console.log("------MANTIKSAL KARŞILAŞTIRMA- || (VEYA)---------")
+
+        console.log(sonuc||sonuc4) //true döndü
+
+console.log(sonuc||sonuc2) // true döndü
+console.log(sonuc6||sonuc8) // true döndü
+console.log(sonuc7||sonuc9) // false
+
+console.log("------MANTIKSAL KARŞILAŞTIRMA- ! (Değil-Tersi)---------")
+console.log(!(sonuc||sonuc2)) // false döndü
+console.log(!(sonuc7||sonuc9)) // true döner
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    /* 
+    
+    1) Parametreli 
+    2)Parametresiz
+    3) Dönüt Veren Fonksiyonlar
+
+
+
+   parametresiz fonksiyon 
+   function topla(){
+        yapılacak işlemler
+    }
+
+    parametreli fonksiyon  
+function topla (sayi1,sayi2,...sayin){
+yapılacak işlemler
+}
+değer döndüren fonksiyonlar
+function topla(){
+return dönmesini isediğimiz sonucu yazıyoruz
+
+}
+
+
+
+    */
+
+function parametresizToplamFunction(){
+    var toplam=10+5
+    document.getElementById('parametresizToplam').innerHTML=toplam
+    document.getElementById('parametresizToplam').style.color='red'
+    document.getElementById('parametresizToplam').style.fontSize='50px'
+}
+
+function parametreliToplamFunction(sayi1,sayi2,changeColor,changeSize){
+var parametreliToplam=sayi1-sayi2
+console.log("sayi1",sayi1)
+console.log("sayi2",sayi2)
+console.log("changeColor",changeColor)
+console.log("changeSize",changeSize)
+
+
+document.getElementById('parametreliToplam').innerHTML=parametreliToplam
+
+document.getElementById('parametreliToplam').style.color=changeColor
+    document.getElementById('parametreliToplam').style.fontSize=changeSize
+}
+
+function degerDöndürenFunction(sayi1,sayi2){
+    var toplam=sayi1+sayi2
+    return  document.getElementById('degerDöndürenFonksiyon').innerHTML="Sayi1:" + sayi1 +" Sayi2: "+ sayi2 +"Sonucu:" +toplam;
+
+}
+
+    
+</script>
+<body>
+<div>
+    <h1>
+       Toplam Parametresiz
+    </h1>
+    <p id="parametresizToplam"></p>
+    <button onclick="parametresizToplamFunction()">Parametresiz Toplam</button>
+</div>
+<div>
+    <h1>
+       Toplam Parametreli Fonksiyon
+    </h1>
+    <p id="parametreliToplam"></p>
+    <button onclick="parametreliToplamFunction(5,10,'red','60px')">Parametresiz Çıkarma Negatif</button>
+    <button onclick="parametreliToplamFunction(10,5,'blue','60px')">Parametresiz Çıkarma Pozitif</button>
+
+</div>
+<div>
+    <h1>
+       Değer Döndüren Fonksiyon
+    </h1>
+    <p id="degerDöndürenFonksiyon"></p>
+    <button onclick="degerDöndürenFunction(5,10)">Değer Döndüren Fonksiyon </button>
+
+</div>
+</body>
+</html>

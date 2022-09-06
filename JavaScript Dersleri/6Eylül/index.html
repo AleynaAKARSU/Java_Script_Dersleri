@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="dem03"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+
+
+
+<script>
+    var i=0 ; var j="0" 
+    var ogrenci={ad:'Ayşe',soyad:'Veli',numara:'210',sinif:'3A'};
+    var arabalar=["Ford",'Fiat','Mercedes','Hyundai']
+    var ogrenciler=[{ad:'Ayşe',soyad:'Veli',numara:'210',sinif:'3A'},{ad:'Fatma',soyad:'Veli',numara:'210',sinif:'4A'},{ad:'Mehmet',soyad:'Veli',numara:'210',sinif:'5A'}]
+    document.getElementById('demo').innerHTML=typeof i
+    document.getElementById('demo2').innerHTML=typeof j
+
+    document.getElementById('dem03').innerHTML=typeof ogrenci
+    document.getElementById('demo6').innerHTML=typeof arabalar
+
+
+    document.getElementById('demo4').innerHTML="Öğrenci Ad:" + ogrenci.ad  +"<br/>" + "Öğrenci Soyad:" + ogrenci.soyad +"<br/>" + "Öğrenci Sınıfı" + ogrenci.sinif+"<br/>" + "Öğrenci Numara" +ogrenci.numara 
+
+    document.getElementById('demo5').innerHTML=ogrenci["ad"] + ogrenci["soyad"]+ogrenci["sinif"]
+    document.getElementById('demo7').innerHTML=arabalar[0]
+    document.getElementById('demo8').innerHTML=ogrenciler[1].ad+ ogrenciler[1]['ad']
+    document.getElementById('demo9').innerHTML=ogrenciler[2].ad + " " + ogrenciler[2].soyad + " " + ogrenciler[2]['numara'] + " " + ogrenciler[2]['sinif'] + " " + ogrenciler[2].numara
+
+
+
+</script>
+
+<a href="nesneFonksiyon.html" target="_blank">Nesnelerde Fonksiyona  Ulaşmak</a>
+</body>
+</html>

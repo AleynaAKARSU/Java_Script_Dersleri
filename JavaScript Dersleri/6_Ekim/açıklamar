@@ -1,0 +1,31 @@
+Array iki şekilde oluşturuyoruz
+
+1 var arrayAdi=[]
+2  var arrayAdi= new Array()
+
+
+isArray() => Array.isArray(arrayAdi)
+
+  Eğerki array ise true değilse false dönüyodu
+
+  toString() => Array'i (Dizi) virgülle ayrılmış yazıya metne çeviriyor
+  
+  
+  join() => Array'i (Dizi) parantez içerisinde verilmiş olan ayraca göre metne yazıya çeviriyor
+
+
+
+  pop() =>  Dizideki son elemanı diziden çıkarıyor
+
+
+  arrayAdi.pop() 
+
+
+  document.getElementById().innerHTML=arrayAdi 
+  // Yukarıdaki kullanım arraden çıkarılan son elemendan sonra ki Array'in yeni hali dönüyor
+
+
+  document.getElementById().innerHTML=arrayAdi.pop()  veya var çikarilan=arrayAdi.pop()
+
+  // Yukarıdaki kullanımda da array'den çıkarılmış olan son eleman neyse onu döndürüyor.
+

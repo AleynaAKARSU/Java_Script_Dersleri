@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+
+    <p id="demo8"></p>
+
+    <p id="demo9"></p>
+
+    <script>
+document.getElementById('demo').innerHTML=Math.floor(Math.random()*31)+5 //5-35 (35 dahil)
+var meyveler=["Ananas","Elma", "Çilek"]
+var meyveler2="Elma , Armut, Karpuz"
+var meyveler3 =new Array("Elma","Armut","Karpuz")
+document.getElementById('demo2').innerHTML=Array.isArray(meyveler)
+
+document.getElementById('demo3').innerHTML=Array.isArray(meyveler2)
+document.getElementById('demo4').innerHTML=Array.isArray(meyveler3)
+document.getElementById('demo5').innerHTML=meyveler[10]
+
+document.getElementById('demo6').innerHTML=meyveler.toString()
+document.getElementById('demo7').innerHTML=meyveler.join('*')
+meyveler.pop()
+document.getElementById('demo8').innerHTML=meyveler
+meyveler3.push('Kavun','Çilek','kİRAZ',"vİŞNE")
+
+document.getElementById('demo9').innerHTML=meyveler3
+
+/* 
+min (dahil) max(dahil değil)
+Math.floor(Math.random()*(max-min))+min
+
+min (dahil) max(dahil )
+
+Math.floor(Math.random()*(max-min+1))+min
+
+
+*/
+
+    </script>
+</body>
+</html>

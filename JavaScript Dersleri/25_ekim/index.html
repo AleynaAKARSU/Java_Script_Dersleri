@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    <p id="demo16"></p>
+
+
+
+
+    <script>
+      var meyveler = ["Ananas", "Armut", "Muz", "Elma", "Çilek", "Kavun"];
+      var meyveler2 = new Array(
+        "Ananas",
+        "Armut",
+        "Muz",
+        "Elma",
+        "Çilek",
+        "Kavun"
+      );
+      var meyveler3 = "Ananas, Armut, Muz,Elma,Çilek, Kavun";
+      document.getElementById('demo').innerHTML=Array.isArray(meyveler)
+      document.getElementById('demo2').innerHTML=Array.isArray(meyveler2)
+      document.getElementById('demo3').innerHTML=Array.isArray(meyveler3)
+      document.getElementById('demo4').innerHTML=typeof meyveler3
+      document.getElementById('demo5').innerHTML=meyveler[4] // Bir array in herhangi bir elemanına ulaşmak için  index numarasına ihtiyaç duyarız ilgili elemanın indexini bulmak için arrayAdi[n-1] fromulünü kullanırız.
+      document.getElementById('demo6').innerHTML=meyveler.toString()
+      document.getElementById('demo7').innerHTML=meyveler.join("+")
+      document.getElementById('demo8').innerHTML=meyveler.join("+")[4]
+      meyveler.pop() // Array dwn sonunu elemen çıkarılır
+      document.getElementById('demo9').innerHTML=meyveler
+
+      document.getElementById('demo10').innerHTML=meyveler2.pop()
+      meyveler.push('Mandalina','Portakal','Ayva')
+      document.getElementById('demo11').innerHTML=meyveler
+      document.getElementById('demo12').innerHTML=meyveler.push('Mandalina','Portakal','Ayva') // Array in sonuna eleman ekliyor ve eleman eklendikten sonraki Array in uzunluğunu döndürüyor
+
+      meyveler.shift() // Array dwn ilk elemen çıkarılır
+      document.getElementById('demo13').innerHTML=meyveler
+      document.getElementById('demo14').innerHTML=meyveler2.shift()
+      meyveler.unshift('Çikolata')
+      document.getElementById('demo15').innerHTML=meyveler
+      document.getElementById('demo16').innerHTML=meyveler.unshift('Dondurma') // Array in başına eleman ekliyor ve eleman eklendikten sonraki Array in uzunluğunu döndürüyor
+
+
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+
+
+
+   <script>
+document.getElementById('demo').innerHTML=(Math.random())
+document.getElementById('demo2').innerHTML=Math.floor(Math.random()*10) //0 -9 arası 
+document.getElementById('demo3').innerHTML=Math.floor(Math.random()*11) //0 -10 arası
+document.getElementById('demo4').innerHTML=Math.floor(Math.random()*100) //0 -99 arası
+document.getElementById('demo5').innerHTML=Math.floor(Math.random()*101) //0 -100 arası (100 dahil)
+document.getElementById('demo6').innerHTML=Math.floor(Math.random()*10)+1 //1 -10 arası
+document.getElementById('demo7').innerHTML=Math.floor(Math.random()*20)+5 // 5-25 arasında rastgele sayı üretme
+document.getElementById('demo7').innerHTML=Math.floor(Math.random()*21)+ 5// 5-25 arasında rastgele sayı üretme (25 dahil)
+document.getElementById('demo9').innerHTML=Math.floor(Math.random()*250)+ 100// 5-25 arasında rastgele sayı üretme (25 dahil)
+
+Math.floor(3.546546546456456) // 3 sayısı gelmiş oluyo
+/*
+
+verdiğim min ve max olarak sayı üretmek istediğimde kullanılan formül min(dahil), max(dahil değil)
+
+Math.floor(Math.random()*(max-min))+min
+
+
+verdiğim min ve max olarak sayı üretmek istediğimde kullanılan formül min(dahil), max(dahil)
+
+
+Math.floor(Math.random()*(max-min+1))+min
+
+*/
+   </script> 
+</body>
+</html>

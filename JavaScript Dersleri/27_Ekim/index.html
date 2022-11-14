@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+
+    <p id="demo11"></p>
+
+    <p id="demo12"></p>
+
+
+
+
+    <script>
+var meyveler= ['Elma', 'Armut', 'Muz', 'Çilek', 'Karpuz', 'Kavun']
+var sebzeler= ['Salatalık', 'Maydanoz', 'Mor Lahana', 'Pırasa']
+
+meyveler[0]='Mandalina',
+meyveler[3]='Kiraz',
+
+document.getElementById('demo').innerHTML=meyveler
+meyveler[meyveler.length]='Limon'
+document.getElementById('demo2').innerHTML=meyveler
+meyveler[meyveler.length-1]='Ananas'
+
+document.getElementById('demo3').innerHTML=meyveler
+delete meyveler[2]
+document.getElementById('demo4').innerHTML=meyveler
+sebzeler.splice(2,0,"Limon","Armut","Kavun") //İlk parametre => yeni elemanların dizide nereye ekleneceğini belirlediğimiz parametre
+ // 2.patremiz => diziden kaç tane elemanın siliniceğini belirlediğimiz parametre
+//Ondan sonraki verile parametre de diyie ekliceğimiz yeni elemanlar olmuş oluyor.
+document.getElementById('demo5').innerHTML=sebzeler
+sebzeler.splice(0,1)
+document.getElementById('demo6').innerHTML=sebzeler
+sebzeler.splice(1,1,'Ananas')
+document.getElementById('demo7').innerHTML=sebzeler
+
+sebzeler.splice(1,1)
+document.getElementById('demo8').innerHTML=sebzeler
+var yiyecekler = meyveler.concat(sebzeler)
+document.getElementById('demo9').innerHTML=yiyecekler
+document.getElementById('demo10').innerHTML=sebzeler
+
+var yeniDizi = sebzeler.slice(2)
+
+document.getElementById('demo11').innerHTML=yeniDizi
+var yeniDizi2 = sebzeler.slice(2,3)
+// slice => slice metodu ile bir arrayden kesme işlemi yapılabilir birinc vermiş olduğumuz değer hangi elemendan başlayarak kesmek istiyosak o elmanın değerini veriyoruz herhangi bir bitiş değeri vermemişsek vermiş olduğumuz elemandan başlayarak tüm elemanları alıyor ve yeni bir diziye atıyo
+// slice => bir başlangıç verip bir de bitiş elemanını verirsek (başlangıç elemanı dahil, bitiş dahil değil) arasında kalan elemanları alıp yeni bir array' e atılır (kes-yapıştır mantığında )
+
+document.getElementById('demo12').innerHTML=yeniDizi2
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">
+
+    </p>
+    <p id="demo2">
+
+    </p>
+    <p id="demo3">
+
+    </p>
+    <p id="demo4">
+
+    </p>
+    <p id="demo5">
+
+    </p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+
+    <p id="demo16"></p>
+    <p id="demo17"></p>
+    <p id="demo18"></p>
+
+
+
+
+    <script>
+        var meyveler=['Karpuz','Elma','Armut','Muz','Çilek'];
+        var sebzeler = new Array('Lahana','Marul','Maydanoz','Pırasa')
+        var newArray=['A','B','C','D','E','F'];
+        var newArray2=['G','H','I','İ','J','K'];
+
+
+        var sebzeler2='Lahana,Marul,maydanoz,Pırasa'
+document.getElementById('demo').innerHTML=Array.isArray(meyveler);
+document.getElementById('demo2').innerHTML=Array.isArray(sebzeler);
+document.getElementById('demo3').innerHTML=Array.isArray(sebzeler2) + ' ' + typeof sebzeler2;
+document.getElementById('demo4').innerHTML=meyveler.toString();
+document.getElementById('demo5').innerHTML=meyveler.join('+');
+ // array içerisinde 400 eleman olduğunu düşünelim array[n-1] 395. elemana ulaşmak istiyosam array[394]
+ meyveler.pop();
+ document.getElementById('demo6').innerHTML=meyveler
+ var cikarilanEleman=meyveler.pop()
+ document.getElementById('demo7').innerHTML=cikarilanEleman
+
+meyveler.push('Mandalina','Portakal')
+document.getElementById('demo8').innerHTML=meyveler
+var eklenenElemanlar= meyveler.push('Karpuz','Elma')
+document.getElementById('demo9').innerHTML=eklenenElemanlar
+meyveler.shift();
+document.getElementById('demo10').innerHTML=meyveler
+var cikanIlkEleman=meyveler.shift()
+document.getElementById('demo11').innerHTML=cikanIlkEleman
+meyveler.unshift('Çilek','Ananas','Kavun');
+document.getElementById('demo12').innerHTML=meyveler
+var basaEklenenElemanlar= meyveler.unshift('Karpuz','Elma')
+document.getElementById('demo13').innerHTML=basaEklenenElemanlar
+delete sebzeler[1]
+document.getElementById('demo14').innerHTML=sebzeler
+
+newArray.splice(2,0,'X','Y','Z')
+document.getElementById('demo15').innerHTML=newArray
+newArray.splice(2,3)
+document.getElementById('demo16').innerHTML=newArray
+
+
+document.getElementById('demo17').innerHTML=newArray.concat(newArray2)
+var yeniDizi=newArray.slice(2,4)
+document.getElementById('demo18').innerHTML=yeniDizi
+
+    </script>
+</body>
+</html>

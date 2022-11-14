@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+
+
+    <script>
+        var sayilar = ['10','20','30','40','50']
+      var kisiler = [
+        {
+          id: 0,
+          adi: "Ayşe",
+          soyadı: "Yüksek",
+          yas: 20,
+          cinsiyet: "Kız",
+          unvani: "Ogrenci",
+          puan: 65,
+        },
+        {
+          id: 1,
+          adi: "Veli",
+          soyadı: "Yüksel",
+          yas: 32,
+          cinsiyet: "Erkek",
+          unvani: "Ogrenci",
+          puan: 75,
+        },
+        {
+          id: 2,
+          adi: "Sultan",
+          soyadı: "Yılmaz",
+          yas: 20,
+          cinsiyet: "Kız",
+          unvani: "Ogrenci",
+          puan: 85,
+        },
+        {
+          id: 3,
+          adi: "Mehmet",
+          soyadı: "Yürek",
+          yas: 26,
+          cinsiyet: "Erkek",
+          unvani: "Ogrenci",
+          puan: 75,
+        },
+        {
+          id: 4,
+          adi: "Kemal",
+          soyadı: "Deneme",
+          yas: 26,
+          cinsiyet: "Erkek",
+          unvani: "Öğretmen",
+          puan: 85,
+        },
+      ];
+      unvaniSonucuMapUygulandıktanSonrakiHali=['Ogrenci','Ogrenci','Ogrenci','Ogrenci','Öğretmen']
+      puanBilgisineUlasilmakIstendiğindeMapFonksiyonuSonucuArrayInYeniHali=[65,75,85,75,85]
+puan75bUYUKoLANfilterFonksyionuSonucuArrayYeniHali=[  {
+          id: 2,
+          adi: "Sultan",
+          soyadı: "Yılmaz",
+          yas: 20,
+          cinsiyet: "Kız",
+          unvani: "Ogrenci",
+          puan: 85,
+        },
+        
+        {
+          id: 4,
+          adi: "Kemal",
+          soyadı: "Deneme",
+          yas: 26,
+          cinsiyet: "Erkek",
+          unvani: "Öğretmen",
+          puan: 85,
+        },
+    ]
+      document.getElementById('demo').innerHTML=kisiler[0].adi
+      document.getElementById('demo3').innerHTML=kisiler[1]['adi']
+
+      document.getElementById('demo2').innerHTML=sayilar
+
+      var sonuc= kisiler.map(x=>x.adi)
+      var sonuc2 = kisiler.map(data=>data.soyadı)
+      var sonucUnvani= kisiler.map(y => y.unvani)
+      var sonucPuan = kisiler.map(a=>a.puan)
+      var puan75Buyuk = kisiler.filter(y => y.puan >75)
+     var puan75BuyukKisilerinAdSoyad = puan75Buyuk.map(b =>b.adi + b.soyadı)
+      document.getElementById('demo4').innerHTML= sonuc 
+      document.getElementById('demo5').innerHTML= sonuc2 
+      document.getElementById('demo6').innerHTML=sonucUnvani
+      document.getElementById('demo7').innerHTML=sonucUnvani[0]
+      document.getElementById('demo8').innerHTML=sonucPuan
+      document.getElementById('demo9').innerHTML=puan75Buyuk
+document.getElementById('demo10').innerHTML=puan75BuyukKisilerinAdSoyad
+
+
+    </script>
+  </body>
+</html>

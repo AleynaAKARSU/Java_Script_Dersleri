@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+
+    <button onclick="siralama()">Sırala</button>
+    <button onclick="rastgeleSirala()">Rastegele Sırala</button>
+    <button onclick="siralaEnKücük()">En küçük Sayı</button>
+    <button onclick="siralaEnBüyük()">En Büyük Sayı</button>
+
+
+    <p></p>
+
+    <script>
+        var newArray=['Muz','Elma','Portakal','Mango'];
+        var sayilar= [25,9,12,33,87,1,42]
+        document.getElementById('demo').innerHTML=newArray.sort()
+        document.getElementById('demo2').innerHTML=newArray.reverse()
+
+        function siralama(){
+            sayilar.sort(function(a,b){return a-b})
+            document.getElementById('demo3').innerHTML=sayilar
+        }
+        function rastgeleSirala(){
+            sayilar.sort(function(a,b){return 0.5 - Math.random()})
+            document.getElementById('demo4').innerHTML=sayilar
+
+        }
+        function siralaEnKücük(){
+            sayilar.sort(function(a,b){return a-b})
+            document.getElementById('demo5').innerHTML=sayilar[0]
+        }
+        function siralaEnBüyük(){
+            sayilar.sort(function(a,b){return a-b})
+            document.getElementById('demo6').innerHTML=sayilar[sayilar.length-1]
+
+        }
+
+    </script>
+</body>
+</html>

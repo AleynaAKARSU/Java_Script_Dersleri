@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">
+
+    </p>
+    <p id="demoToplam">
+
+    </p>
+    <p id="t1">
+
+    </p>
+    <p id="t2">
+
+    </p>
+    <p id="t3">
+
+    </p>
+    <p id="t4">
+
+    </p>
+    <p id="sayi1">
+
+    </p>
+    <p id="sayi2">
+
+    </p>
+    <p id="sayi3">
+
+    </p>
+    <p id="sayi4">
+
+    </p>
+    <p id="degisken">
+
+    </p>
+    <p id="degiskenNumber">
+
+    </p>
+    <p id="numberFalse"></p>
+    <p id="metinVeriTürü"></p>
+    <p id="metin"></p>
+    <p id="metin2VeriTürü"></p>
+    <p id="metin2"></p>
+    <p id="round"></p>
+    <p id="round2"></p>
+    <p id="ceil"></p>
+    <p id="ceil2"></p>
+    <p id="floor"></p>
+    <p id="floor2"></p>
+    <p id="abs"></p>
+    <p id="abs2"></p>
+    <p id="min"></p>
+    <p id="max"></p>
+    <script>
+        var x=10;
+        var y= 20;
+        var z=x.toString() + y.toString()
+        var zToplam= x+y
+        document.getElementById('demo').innerHTML=z
+        document.getElementById('demoToplam').innerHTML=zToplam
+
+
+        var t=10.439
+        var t1=t.toFixed(0)
+        var t2=t.toFixed(2)
+        var t3=t.toFixed(4)
+        var t4=t.toFixed(6)
+
+        document.getElementById('t1').innerHTML=t1
+        document.getElementById('t2').innerHTML=t2
+        document.getElementById('t3').innerHTML=t3
+        document.getElementById('t4').innerHTML=t4
+
+
+        var sayi=9.765
+        document.getElementById('sayi1').innerHTML=sayi.toPrecision(2)
+        document.getElementById('sayi2').innerHTML=sayi.toPrecision(3)
+        document.getElementById('sayi3').innerHTML=sayi.toPrecision(4)
+        document.getElementById('sayi4').innerHTML=sayi.toPrecision(5)
+var degisken=true;
+var numberFalse=false;
+document.getElementById('degisken').innerHTML=typeof degisken
+document.getElementById('degiskenNumber').innerHTML=Number(degisken)
+document.getElementById('numberFalse').innerHTML=Number(numberFalse)
+var metin="5.22"
+document.getElementById('metinVeriTürü').innerHTML=typeof metin
+document.getElementById('metin').innerHTML=parseInt(metin)
+var metin2="5.22"
+document.getElementById('metin2VeriTürü').innerHTML=typeof metin2
+document.getElementById('metin2').innerHTML=parseFloat(metin2)
+document.getElementById('round').innerHTML=Math.round(2.4)
+
+document.getElementById('round2').innerHTML=Math.round(2.7)
+document.getElementById('ceil').innerHTML=Math.ceil(2.4)
+
+document.getElementById('ceil2').innerHTML=Math.ceil(2.7)
+document.getElementById('floor').innerHTML=Math.floor(2.4)
+
+document.getElementById('floor2').innerHTML=Math.floor(2.7)
+document.getElementById('abs').innerHTML=Math.abs(-10.5)
+document.getElementById('abs2').innerHTML=Math.abs(10.5)
+document.getElementById('min').innerHTML=Math.min(-5,5,-35,10)
+document.getElementById('max').innerHTML=Math.max(-5,5,-35,10)
+
+    </script>
+</body>
+</html>

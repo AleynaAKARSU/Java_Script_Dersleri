@@ -1,0 +1,20 @@
+"toString()" =   'Number türündeki veriyi string veri türüne dönüştürür'
+"toFixed(parametre)" =   ' kendisine parametre olarak verilen sayının ondalık hane sayısının belirlenmesi için kullanılır. Küsurat olarak kaç hane gösterilmesi isteniyorsa sayı ile belirlenir.'
+"toPrecision()" =   'toPrecision() metodu toFixed() metodu ile aynı iş için kullanılıyor ancak farkı toFixed() metodunda verilen parametre ondalıklı kısımdaki basamak sayısını belirtirken toPrecision() metodunda tam ve ondalıklı kısmın toplamındaki basamak sayısını belirtir.'
+
+'JavaScript programlama dilinle bir değişkeni sayıya çevirmek için 3 metod vardır:
+
+'Number() metodu'
+'parseInt() metodu'
+'parseFloat() metodu'
+'Bunlar sayı metodları değildir fakat global JavaScript metodlarıdır.'
+
+
+'Not: parseFloat() string değeri ayrıştırır, geriye  sayı döndürür. parseInt() metodundan farklı olarak varsa ondalık haneyi de döndürür:'
+
+'Math.round()' = 'round() metodu ile en yakın sayıya yuvarlama yapabiliriz.'
+'Math.ceil()' = 'ceil() metodu ile en yakın tam sayıya yukarı yuvarlama yaparız.'
+'Math.floor()' = 'floor() metodu ile en yakın tam sayıya aşağı yuvarlama yaparız.'
+'Math.abs()' = 'abs() metoduna gönderilen sayı pozitif olarak geri gönderilir.'
+
+'Math.min() ve Math.max()' = 'min() metodu kendisine gönderilen sayıların en küçüğünü bulur. max() metodu ise en büyüğünü bulur.'
